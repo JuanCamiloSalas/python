@@ -1,4 +1,3 @@
-
 # Curso de fundamentos de Python
 ## Introducción
 ### ¿Por qué aprender Python?
@@ -18,27 +17,112 @@ print(“Hola mundo!”)
 
 - **Imprimir el calculo de operaciones matematicas:**
 
-\```
+```
 print(2+20)
 print(50-10)
 print(3*2)
 print(10/5)
-\```
+```
 
 - **Comentarios:**
 Para agregar comentarios que permiten documentar nuestro programa podemos hacerlos de 2 formas:
 
-  - Comentario de una sola línea, agregamos un # antes de la línea a comentar
+- Comentario de una sola línea, agregamos un # antes de la línea a comentar
 
-\```
+```
 # Este es una operación matemática
-\```
+```
 
   - Comentario varias lineas, agregamos el comentario entre “”” ó ‘’’
 
-\```
+```
 “”” comentario mas
 Largo ”””
+```
+```
 ''' Otro comentario
 largo''' 
-\```
+```
+
+### Variables
+Las variables son Espacios de memoria en donde se almacenan un tipo de dato y las cuales se identifican con un nombre, para entender mejor su concepto puede compararse con una caja que almacena un tipo de objetos y que esta marcada con un nombre relacionado a lo que contiene.
+
+Las variables en python se declaran así:
+```
+nombre_variable = "valor"
+```
+Las variables pueden ser declaradas, consultadas o modificadas a lo largo de nuestro programa.
+
+Para recibir un dato del usuario podemos usar el comando `input`:
+```
+input(“¿Cuál es tu nombre?”)
+```
+
+Se puede guardar en una variable:
+```
+nombre = input(“¿Cuál es tu nombre?”)
+```
+
+## Tipos de datos en Python
+### Tipos de datos
+Existen varios tipos de datos en Python, los 3 mas conocidos son:
+
+- String: Cadenas de texto
+```
+nombreVariable = “texto”
+nombreVariable = ‘texto’
+```
+- Int: números enteros.
+```
+nombreVariable = 12
+```
+- Boleanos: Tiene dos estados True(verdadero) ó False(falso).
+```
+nombreVariable = True
+```
+> [!NOTE]
+> Para saber cual es el tipo de una variable podemos usar la función type(variable) y se puede imprimir usando print().
+```
+print(type(variable))
+```
+
+
+Para declarer una variable tipo string podemos usar “ ” ó ‘ ’.
+
+++String:++ Cadenas de texto.
+
+
+nombre_variable = “texto” # Cuando el texto tenga: ‘
+nombre_variable = ‘texto’ # Cuando el texto tenga: “
+Podemos unir o concadenar varios String utilizando el operador +.
+
+### Strings
+Para declarer una variable tipo string podemos usar “ ” ó ‘ ’.
+```
+nombre_variable = “texto” 
+# Cuando el texto tenga: ‘
+
+nombre_variable = ‘texto’ 
+# Cuando el texto tenga: “
+```
+Podemos unir o concadenar varios String utilizando el operador `+`.
+```
+nombre = ‘Pepito’
+apellido = “ Perez”
+nombre_completo = nombre + “ ” + apellido
+```
+> [!TIP]
+> String con formato: Nos permite concatenar de manera fácil y legible nuestro texto con nuestras variables las cuales se colocan entre {}, hay dos formas de hacerlo, pero la segunda es mas legible.
+
+- Primera forma
+```
+template = "Hola, mi nombre es " + first_name + ", y mi apellido es " + last_name
+```
+- Segunda forma
+```
+template = "Hola, mi nombre es {}, y mi apellido es {}".format(first_name, last_name)
+```
+- Tercera forma
+```
+template = f"Hola, mi nombre es {first_name}, y mi apellido es {last_name}"
+```
