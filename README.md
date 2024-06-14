@@ -86,16 +86,6 @@ nombreVariable = True
 print(type(variable))
 ```
 
-
-Para declarer una variable tipo string podemos usar “ ” ó ‘ ’.
-
-++String:++ Cadenas de texto.
-
-
-nombre_variable = “texto” # Cuando el texto tenga: ‘
-nombre_variable = ‘texto’ # Cuando el texto tenga: “
-Podemos unir o concadenar varios String utilizando el operador +.
-
 ### Strings
 Para declarer una variable tipo string podemos usar “ ” ó ‘ ’.
 ```
@@ -125,4 +115,43 @@ template = "Hola, mi nombre es {}, y mi apellido es {}".format(first_name, last_
 - Tercera forma
 ```
 template = f"Hola, mi nombre es {first_name}, y mi apellido es {last_name}"
+```
+
+### Numbers
+Las variables tipo número pueden ser enteras(que no tienen decimales) o flotantes(que tienen decimales), y siempre se declaran sin estar encerradas entre comillas ya que de lo contrario serían de tipo string. 
+
+- **Int:**
+```
+lives = 3
+print(type(lives)) # <class 'int'>
+```
+
+- **Float:**
+```
+temperature = 12.12
+print(type(temperature)) # <class 'float'>
+
+```
+
+Las variables numéricas nos permiten realizar cálculos matemáticos y obtener resultados, utilizando operadores matemáticos.
+
+```
+lives = 12 + 15
+```
+
+Podemos realizar operaciones con la misma variable y para esto tenemos 2 formas de hacerlo, la cual la segunda es la forma simplificada en la cual se utilizan operadores de asignacion.
+
+```
+lives = lives - 1
+lives -= 1
+```
+
+Python nos muestra en notación científica números cuyo valor es muy grande o muy pequeño.
+
+```
+number = 4500000000000000000.1
+print(number) # 4.5e+18
+
+number_b = 0.0000000000000001
+print(number_b) # 1e-16
 ```
